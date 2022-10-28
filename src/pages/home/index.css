@@ -1,0 +1,179 @@
+.font-hero-color {
+    color: white;
+}
+
+.reservation-button {
+    background-color: black !important;
+    color: white !important;
+}
+
+.MuiSvgIcon-root {
+    color: white !important;
+}
+
+
+.tabbed-hero {
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.hero-logoContainer {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.tabbedHero-menu {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.tabbedHero-menu a {
+    text-decoration: none;
+}
+
+
+.hero-tab {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero-tab-container {
+    position: absolute;
+    top: 40%;
+    left: 500px;
+    color: white;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+}
+
+.background-image-housing {
+    background-image: url(../../assets/hero-housing.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.background-image-restaurant {
+    background-image: url(../../assets/junte-os-seus-amigos.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.background-image-organic {
+    background-image: url(../../assets/Organic.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.background-image-gym {
+    background-image: url(../../assets/Gym.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.background-image-experiences {
+    background-image: url(../../assets/fuseta-1.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.side-content {
+    background-color: var(--background-primary);
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .hero-tab-container {
+        top: 40%;
+        left: 35%;
+    }
+    .hero-tab-container h3 {
+        text-align: left;
+    }
+    .hero-tab-container h1 {
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .hero-tab-container {
+        top: 40%;
+        left: 50%;
+    }
+    .hero-tab-container h3 {
+        text-align: center;
+    }
+    .hero-tab-container h1 {
+        text-align: center;
+    }
+
+    .tabbedHero-menu {
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .tabbedHero-menu a{
+        
+        display: flex;
+        justify-content: space-around;
+    }
+    .tabbedHero-menu div{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tabbedHero-menu h2{
+        padding-left: 20px;
+    }
+    .tabbedHero-menu a {
+        text-decoration: none;
+    }
+
+
+
+  }
+  @media only screen and (max-width: 1000px) {
+    .hero-tab-container {
+        top: 40%;
+        left: 50%;
+    }
+    .hero-tab-container h3 {
+        display: none;
+    }
+    .hero-tab-container h1 {
+        display: none;
+    }
+    .tabbedHero-menu {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        transform: translateX(0%);
+     }
+
+}
