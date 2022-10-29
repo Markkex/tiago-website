@@ -11,3 +11,12 @@
     --background-primary: #EEF1F1;
     --background-secondary: #000000;
 }
+
+.primary-text-color {
+    color: var(--primary-color);
+}
+
+.inside-content {
+    display: flex;
+    flex-direction: row;
+}

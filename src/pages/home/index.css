@@ -34,7 +34,7 @@
 
 .tabbedHero-menu {
     position: absolute;
-    bottom: 20%;
+    bottom: 50px;
     left: 0%;
     width: 100%;
     display: flex;
@@ -108,40 +108,74 @@
 }
 
 
-@media only screen and (max-width: 1300px) {
-    .hero-tab-container {
-        top: 40%;
-        left: 35%;
-    }
+.tabbedHero-menu {
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width: 600px) {
     .hero-tab-container h3 {
-        text-align: left;
+        display: none;
     }
-    .hero-tab-container h1 {
-        text-align: left;
+    .hero-tab-container h1{
+        display: none;
+    }
+    .tabbedHero-menu > div {
+        padding-bottom: 20px;
     }
 }
-@media only screen and (max-width: 1200px) {
-    .hero-tab-container {
-        top: 40%;
-        left: 50%;
+
+@media only screen and (min-width: 600px) {
+
+    .tabbedHero-menu > div {
+        padding-bottom: 20px;
     }
+
     .hero-tab-container h3 {
-        text-align: center;
+        display: none;
     }
-    .hero-tab-container h1 {
-        text-align: center;
+    .hero-tab-container h1{
+        display: none;
     }
+
 
     .tabbedHero-menu {
         align-items: center;
         flex-direction: column;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    .hero-tab-container h3 {
+        display: none;
     }
-    .tabbedHero-menu a{
-        
-        display: flex;
-        justify-content: space-around;
+    .hero-tab-container h1{
+        display: none;
     }
+}
+
+@media only screen and (min-width: 992px) { 
+    
+
+    .hero-tab-container h3 {
+        display: block;
+    }
+    .hero-tab-container h1{
+        display: block;
+    }
+    .hero-tab-container {
+        top: 40%;
+        left: 350px;
+    }
+
+
+    .tabbedHero-menu {
+        align-items: center;
+        flex-direction: row;
+    }
+
+
     .tabbedHero-menu div{
         padding-top: 30px;
         display: flex;
@@ -155,25 +189,8 @@
         text-decoration: none;
     }
 
+}
 
-
-  }
-  @media only screen and (max-width: 1000px) {
-    .hero-tab-container {
-        top: 40%;
-        left: 50%;
-    }
-    .hero-tab-container h3 {
-        display: none;
-    }
-    .hero-tab-container h1 {
-        display: none;
-    }
-    .tabbedHero-menu {
-        position: absolute;
-        top: 20%;
-        left: 0;
-        transform: translateX(0%);
-     }
-
+@media only screen and (min-width: 1200px) {
+    
 }

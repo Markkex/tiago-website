@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import ResponsiveAppBar from "../../components/Menu";
 import { Container } from "@mui/system";
+import towel from "../../assets/towel.png";
+//images
 
 const Home = () => {
   const [residenceOn, setResidenceOn] = useState(true);
@@ -91,7 +93,7 @@ const Home = () => {
           >
             <Link to={"casas-da-vila"}>
               <HouseSidingIcon fontSize="large" />
-              <h2 className="font-hero-color">Alojamento Local</h2>
+              <p className="font-hero-color">Alojamento Local</p>
             </Link>
           </div>
           <div
@@ -106,7 +108,7 @@ const Home = () => {
           >
             <Link to={"iguarias-da-vila"}>
               <RestaurantMenuIcon fontSize="large" />
-              <h2 className="font-hero-color">Iguarias da Vila</h2>
+              <p className="font-hero-color">Iguarias da Vila</p>
             </Link>
           </div>
           <div
@@ -121,7 +123,7 @@ const Home = () => {
           >
             <Link to={"organic"}>
               <SpaIcon fontSize="large" />
-              <h2 className="font-hero-color">Organic</h2>
+              <p className="font-hero-color">Organic</p>
             </Link>
           </div>
           <div
@@ -136,37 +138,65 @@ const Home = () => {
           >
             <Link to={"warriors-prophecy"}>
               <FitnessCenterIcon fontSize="large" />
-              <h2 className="font-hero-color">Warrior's Prophecy</h2>
+              <p className="font-hero-color">Warrior's Prophecy</p>
             </Link>
           </div>
 
-          <Link to={"descubra-a-fuseta"}>
-            <div
-              style={{ textAlign: "center" }}
-              onMouseEnter={() => {
-                setResidenceOn(false);
-                setRestaurantOn(false);
-                setOrganicOn(false);
-                setLocalsOn(false);
-                setExperiencesOn(true);
-              }}
-            >
+          <div
+            style={{ textAlign: "center" }}
+            onMouseEnter={() => {
+              setResidenceOn(false);
+              setRestaurantOn(false);
+              setOrganicOn(false);
+              setLocalsOn(false);
+              setExperiencesOn(true);
+            }}
+          >
+            <Link to={"descubra-a-fuseta"}>
               <KitesurfingIcon fontSize="large" />
-              <h2 className="font-hero-color">Experiências</h2>
-            </div>
-          </Link>
+              <p className="font-hero-color">Experiências</p>
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="my-5 side-content">
+      <div className="my-5 side-content" style={{ height: "50%" }}>
         <Container>
-          <div className="py-5">
-            <h3>CASAS DA VILA</h3>
-            <div>Casas da Vila</div>
+          <div className="inside-content">
+            <div className="py-5" style={{ width: "50%" }}>
+              <h3>CASAS DA VILA</h3>
+              <div className="primary-text-color">
+                O AGRUPAMENTO IDEAL PARA DIAS DE TRANQUILIDADE EM FUZETA
+              </div>
+
+              <div className="py-3">
+                <p>
+                  Casas da Vila é um agrupamento de casas com destino a
+                  arrendamento em Fuseta, no Algarve.
+                </p>
+                <p>
+                  A 2 minutos da praia e ilha da Fuzeta esta é uma localização
+                  priveligiada sobre o Parque Natural da Ria Formosa, eleita uma
+                  das 7 Maravilhas Naturais de Portugal, estes alojamentos são o
+                  local ideal para umas férias em familia e ficar a conhecer o
+                  sotavento algarvio.
+                </p>
+                <p>
+                  Localizado no centro da vila da Fuzeta, estamos completamente
+                  equipados para a sua estadia conosco. Ao reservar conosco
+                  também tem direito a descontos com os nossos parceiros.
+                </p>
+                <p>
+                  As Casas da Vila encontram-se a 20km da cidade de Faro e da
+                  cidade de Tavira, sendo o sitio perfeito para os grandes polos
+                  do sotavento algarvio.
+                </p>
+              </div>
+            </div>
+
+            <div className="py-5 px-3" style={{ width: "50%" }}>
+              <img src={towel} alt="towel" width="100%" height="100%" />
+            </div>
           </div>
-
-          <div>Casas da Vila Text</div>
-
-          <div>image</div>
         </Container>
       </div>
     </div>
