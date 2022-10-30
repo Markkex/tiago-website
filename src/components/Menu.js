@@ -48,8 +48,7 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "Roboto",
-              fontWeight: 400,
-              letterSpacing: ".3rem",
+
               color: "inherit",
               textDecoration: "none",
             }}
@@ -92,12 +91,31 @@ function ResponsiveAppBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Typography textAlign="center">Iguarias da Vila</Typography>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      mr: 2,
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                    color="white"
+                  >
+                    Iguarias da Vila
+                  </Typography>
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link to="/organic" target="_blank" rel="noopener noreferrer">
-                  <Typography textAlign="center">Organic</Typography>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      mr: 2,
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Organic
+                  </Typography>
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
@@ -106,7 +124,16 @@ function ResponsiveAppBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Typography textAlign="center">Warrior's Prophecy</Typography>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      mr: 2,
+                      color: "black",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Warrior's Prophecy
+                  </Typography>
                 </Link>
               </MenuItem>
             </Menu>
