@@ -1,44 +1,39 @@
 import { Container } from "@mui/material";
 import React from "react";
+import "./index.css";
 
-const SideContent = () => {
+const SideContent = ({
+  titleText,
+  titleDescription,
+  textOne,
+  textTwo,
+  textThree,
+  textFour,
+  imageUrl,
+}) => {
   return (
     <div className="my-5 side-content">
       <Container>
         <div className="inside-content">
           <div className="py-5" style={{ width: "50%" }}>
-            <h3>CASAS DA VILA</h3>
-            <div className="primary-text-color">
-              O AGRUPAMENTO IDEAL PARA DIAS DE TRANQUILIDADE EM FUZETA
+            <h3 style={{ textTransform: "uppercase" }}>{titleText}</h3>
+            <div
+              className="primary-text-color"
+              style={{ textTransform: "uppercase" }}
+            >
+              {titleDescription}
             </div>
 
             <div className="py-3">
-              <p>
-                Casas da Vila é um agrupamento de casas com destino a
-                arrendamento em Fuseta, no Algarve.
-              </p>
-              <p>
-                A 2 minutos da praia e ilha da Fuzeta esta é uma localização
-                priveligiada sobre o Parque Natural da Ria Formosa, eleita uma
-                das 7 Maravilhas Naturais de Portugal, estes alojamentos são o
-                local ideal para umas férias em familia e ficar a conhecer o
-                sotavento algarvio.
-              </p>
-              <p>
-                Localizado no centro da vila da Fuzeta, estamos completamente
-                equipados para a sua estadia conosco. Ao reservar conosco também
-                tem direito a descontos com os nossos parceiros.
-              </p>
-              <p>
-                As Casas da Vila encontram-se a 20km da cidade de Faro e da
-                cidade de Tavira, sendo o sitio perfeito para os grandes polos
-                do sotavento algarvio.
-              </p>
+              {textOne !== null && <p>{textOne}</p>}
+              {textTwo !== null && <p>{textTwo}</p>}
+              {textThree !== null && <p>{textThree}</p>}
+              {textFour !== null && <p>{textFour}</p>}
             </div>
           </div>
 
           <div className="py-5 px-3" style={{ width: "50%" }}>
-            <img src={towel} alt="towel" width="100%" />
+            <img src={imageUrl} alt="towel" width="100%" />
           </div>
         </div>
       </Container>
