@@ -16,7 +16,11 @@
     color: var(--primary-color);
 }
 
-.inside-content {
-    display: flex;
-    flex-direction: row;
+.button-reservation {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+a:hover {
+    color: black;
 }

@@ -12,7 +12,9 @@ import "./index.css";
 import ResponsiveAppBar from "../../components/Menu";
 import { Container } from "@mui/system";
 import towel from "../../assets/towel.png";
+import middleHouse from "../../assets/middle-house.png";
 import SideContent from "../../components/side-content/SideContent";
+import HouseCard from "../../components/card/HouseCard";
 //images
 
 const Home = () => {
@@ -160,25 +162,63 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <SideContent
-        titleText={"Casas da Vila"}
-        titleDescription={
-          "O AGRUPAMENTO IDEAL PARA DIAS DE TRANQUILIDADE EM FUZETA"
-        }
-        textOne={`Casas da Vila é um agrupamento de casas com destino a arrendamento em Fuseta, no Algarve.`}
-        textTwo={`A 2 minutos da praia e ilha da Fuzeta esta é uma localização
+      <div className="py-5">
+        <SideContent
+          titleText={"Casas da Vila"}
+          titleDescription={
+            "O AGRUPAMENTO IDEAL PARA DIAS DE TRANQUILIDADE EM FUZETA"
+          }
+          textOne={`Casas da Vila é um agrupamento de casas com destino a arrendamento em Fuseta, no Algarve.`}
+          textTwo={`A 2 minutos da praia e ilha da Fuzeta esta é uma localização
                 priveligiada sobre o Parque Natural da Ria Formosa, eleita uma
                 das 7 Maravilhas Naturais de Portugal, estes alojamentos são o
                 local ideal para umas férias em familia e ficar a conhecer o
                 sotavento algarvio.`}
-        textThree={`Localizado no centro da vila da Fuzeta, estamos completamente
+          textThree={`Localizado no centro da vila da Fuzeta, estamos completamente
                 equipados para a sua estadia conosco. Ao reservar conosco também
                 tem direito a descontos com os nossos parceiros.`}
-        textFour={`As Casas da Vila encontram-se a 20km da cidade de Faro e da
+          textFour={`As Casas da Vila encontram-se a 20km da cidade de Faro e da
                 cidade de Tavira, sendo o sitio perfeito para os grandes polos
                 do sotavento algarvio.`}
-        imageUrl={towel}
-      />
+          imageUrl={towel}
+        />
+      </div>
+      <div className="houses-card py-5">
+        <Container>
+          <div className="row">
+            <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+              <HouseCard
+                cardTitle="Casa 1"
+                cardImage={middleHouse}
+                numberOfPeople="2"
+                tipology={4}
+                cardDescription="Lorem Ipsum dolor sit amet."
+                cardLink="/casa-1"
+              />
+            </div>
+            <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+              <HouseCard
+                cardTitle="Casa 2"
+                cardImage={middleHouse}
+                numberOfPeople="2"
+                tipology={4}
+                cardDescription="Lorem Ipsum dolor sit amet."
+                cardLink="/casa-1"
+              />
+            </div>
+            <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+              <HouseCard
+                cardTitle="Casa 3"
+                cardImage={middleHouse}
+                numberOfPeople="2"
+                tipology={4}
+                cardDescription="Lorem Ipsum dolor sit amet."
+                cardLink="/casa-1"
+              />
+            </div>
+          </div>
+        </Container>
+      </div>
     </div>
   );
 };

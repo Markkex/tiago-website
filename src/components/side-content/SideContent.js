@@ -15,16 +15,18 @@ const SideContent = ({
     <div className="my-5 side-content">
       <Container>
         <div className="inside-content">
-          <div className="py-5" style={{ width: "50%" }}>
-            <h3 style={{ textTransform: "uppercase" }}>{titleText}</h3>
+          <div className="py-5 inside-text">
+            <h3 className="inside-title" style={{ textTransform: "uppercase" }}>
+              {titleText}
+            </h3>
             <div
-              className="primary-text-color"
+              className="inside-title primary-text-color"
               style={{ textTransform: "uppercase" }}
             >
               {titleDescription}
             </div>
 
-            <div className="py-3">
+            <div className="py-3 inside-title">
               {textOne !== null && <p>{textOne}</p>}
               {textTwo !== null && <p>{textTwo}</p>}
               {textThree !== null && <p>{textThree}</p>}
@@ -32,7 +34,7 @@ const SideContent = ({
             </div>
           </div>
 
-          <div className="py-5 px-3" style={{ width: "50%" }}>
+          <div className="py-5 px-3 inside-image" style={{ width: "50%" }}>
             <img src={imageUrl} alt="towel" width="100%" />
           </div>
         </div>

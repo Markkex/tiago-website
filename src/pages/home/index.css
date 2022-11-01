@@ -8,8 +8,9 @@
 }
 
 .MuiSvgIcon-root {
-    color: white !important;
+    color: white;
 }
+
 
 
 .tabbed-hero {
@@ -90,12 +91,6 @@
     background-image: url(../../assets/fuseta-1.png);
     background-size: cover;
     background-position: center center;
-}
-
-.side-content {
-    background-color: var(--background-primary);
-    width: 100%;
-    height: 520px;
 }
 
 
