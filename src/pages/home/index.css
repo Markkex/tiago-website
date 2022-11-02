@@ -197,23 +197,23 @@
     }
     .iguarias-container {
         width: 100%;
-        height: 23.3vh;
+        height: 13.3vh;
         background-color: red;
     }
     .container-top {
         margin-top: 10px;
-        height: 23.3vh;
+        height: 13.3vh;
         background-color: red;
     }
 
     .container-middle{
         margin-top: 10px;
         margin-bottom: 10px;
-        height: 23.3vh;
+        height: 13.3vh;
         background-color: red;
     }
     .container-bottom {
-        height: 23.3vh;
+        height: 13.3vh;
         background-color: red;
     }
 
@@ -294,17 +294,18 @@
 .container-top {
     margin-top: 0px;
     margin-left: 10px;
+    height: 33%;
  }
  .container-middle{
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
-    height: 23.3vh;
+    height: 33%;
     background-color: red,
 }
 
 .container-bottom {
-    height: 23.3vh;
+    height: 33%;
     background-color: red;
     margin-left: 10px;
 }
