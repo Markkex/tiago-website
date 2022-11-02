@@ -198,15 +198,6 @@
     }
     .iguarias-container {
         width: 100%;
-<<<<<<< HEAD
-        height: 13.3vh;
-        background-color: red;
-    }
-    .container-top {
-        margin-top: 10px;
-        height: 13.3vh;
-        background-color: red;
-=======
         height: 23.3vh;
         background-image: url(../../assets/junte-os-seus-amigos.png);
         background-size: cover;
@@ -218,21 +209,15 @@
         background-image: url(../../assets/Organic.png);
         background-size: cover;
         background-position: center;
->>>>>>> c3fb17e2d93a44a752f215b814d4bff4793a4a3e
     }
 
     .container-middle{
         margin-top: 10px;
         margin-bottom: 10px;
-<<<<<<< HEAD
-        height: 13.3vh;
-        background-color: red;
-=======
         height: 23.3vh;
         background-image: url(../../assets/Gym.png);
         background-size: cover;
         background-position: center;
->>>>>>> c3fb17e2d93a44a752f215b814d4bff4793a4a3e
     }
     .container-bottom {
         height: 13.3vh;
