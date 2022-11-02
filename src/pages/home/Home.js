@@ -185,6 +185,9 @@ const Home = () => {
       </div>
       <div className="houses-card py-5">
         <Container>
+          <h1 className="pt-3" style={{ textAlign: "center" }}>
+            AS NOSSAS CASAS
+          </h1>
           <div className="row">
             <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
               <HouseCard
@@ -215,6 +218,27 @@ const Home = () => {
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
               />
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div className="partners-container py-5">
+        <Container>
+          <h1 style={{ textAlign: "center" }}>EXPLORE A FUZETA CONOSCO</h1>
+          <h5 style={{ textAlign: "center" }}>
+            Ao reservar conosco tem descontos nos seguintes parceiros:
+          </h5>
+          <div className="partners pt-5">
+            <div className="iguarias-partner">
+              <div className="iguarias-container">Iguarias</div>
+            </div>
+            <div
+              className="partners-width"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
+              <div className="container-top">Organic</div>
+              <div className="container-middle">Warrior's Prophecy</div>
+              <div className="container-bottom">Passeios da Ria</div>
             </div>
           </div>
         </Container>
