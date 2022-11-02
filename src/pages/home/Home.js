@@ -12,6 +12,7 @@ import "./index.css";
 import ResponsiveAppBar from "../../components/Menu";
 import { Container } from "@mui/system";
 import towel from "../../assets/towel.png";
+import fuseta from "../../assets/ilha-da-fuzeta 1.png";
 import middleHouse from "../../assets/middle-house.png";
 import SideContent from "../../components/side-content/SideContent";
 import HouseCard from "../../components/card/HouseCard";
@@ -230,15 +231,44 @@ const Home = () => {
           </h5>
           <div className="partners pt-5">
             <div className="iguarias-partner">
-              <div className="iguarias-container">Iguarias</div>
+              <div className="iguarias-container container-position-relative">
+                <h3 className="container-position-absolute">
+                  Iguarias da Vila
+                </h3>
+              </div>
             </div>
             <div
               className="partners-width"
               style={{ display: "flex", flexDirection: "column" }}
             >
-              <div className="container-top">Organic</div>
-              <div className="container-middle">Warrior's Prophecy</div>
-              <div className="container-bottom">Passeios da Ria</div>
+              <div className="container-top container-position-relative">
+                <h3 className="container-position-absolute">Organic</h3>
+              </div>
+              <div className="container-middle container-position-relative">
+                <h3 className="container-position-absolute">
+                  Warrior's Prophecy
+                </h3>
+              </div>
+              <div className="container-bottom container-position-relative">
+                <h3 className="container-position-absolute">
+                  Passeios Ria Formosa
+                </h3>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div
+        className="guide-container py-5 "
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <Container>
+          <div className="container-position-relative">
+            <img src={fuseta} width="100%" />
+            <div className="container-position-absolute">
+              <span>A BRANCA NOIVA DO MAR E A BELEZA DA RIA FORMOSA</span>
+              <br />
+              <span>DESCUBRA MAIS</span>
             </div>
           </div>
         </Container>
