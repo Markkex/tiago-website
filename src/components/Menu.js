@@ -41,8 +41,6 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <Typography
             variant="h6"
-            noWrap
-            component="a"
             href="/"
             sx={{
               mr: 2,
@@ -150,7 +148,7 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               fontFamily: "Roboto",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+
               color: "inherit",
               textDecoration: "none",
             }}
