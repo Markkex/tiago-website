@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="py-5">
             <h2>Casas da Vila</h2>
           </div>
-          <div className="footer-informations">
+          <div className="footer-informations py-5">
             <div className="partners-footer p-3">
               <h5>Parceiros</h5>
               <span>
@@ -26,7 +26,7 @@ const Footer = () => {
               </span>
             </div>
             <div className="reservation-footer p-3">
-              <h5>Reserva</h5>
+              <h5>Reservas</h5>
               <div className="reservation-links">
                 <span>Faça uma Reserva</span>
               </div>
@@ -40,13 +40,32 @@ const Footer = () => {
                 <br />
 
                 <span>
-                  <a href="mail:cenas@cenas.pt">cenas@cenas.pt</a>
+                  <a href="mailto:cenas@cenas.pt">cenas@cenas.pt</a>
                 </span>
               </div>
             </div>
           </div>
         </div>
       </Container>
+      <hr style={{ backgroundColor: "white" }} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        className="pb-2"
+      >
+        <span className="px-2">
+          <Link>Politica de Privacidade</Link>
+        </span>
+        <span className="px-5">
+          <Link>Cookies</Link>
+        </span>
+        <span className="px-2">
+          <Link>Termos e Condições</Link>
+        </span>
+      </div>
     </div>
   );
 };
