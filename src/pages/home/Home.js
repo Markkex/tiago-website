@@ -16,6 +16,7 @@ import fuseta from "../../assets/ilha-da-fuzeta 1.png";
 import middleHouse from "../../assets/middle-house.png";
 import SideContent from "../../components/side-content/SideContent";
 import HouseCard from "../../components/card/HouseCard";
+import Footer from "../../components/footer/Footer";
 //images
 
 const Home = () => {
@@ -273,6 +274,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
+      <Footer />
     </div>
   );
 };

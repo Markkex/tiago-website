@@ -1,0 +1,33 @@
+
+
+@media only screen and (min-width: 600px) { 
+    .footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-informations{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+   
+.footer-informations{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+}
+
+}
