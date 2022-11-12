@@ -17,13 +17,6 @@
   z-index: 1;
 }
 
-.reveal {
-  display: none;
-}
-.reveal.active {
-  display: block;
-}
-
 .hero-menu {
   display: flex;
   justify-content: space-between;
@@ -111,6 +104,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .reveal {
+    display: block;
+  }
+
   .hero-tab-container h3 {
     display: none;
   }
@@ -292,6 +289,13 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .reveal {
+    display: none;
+  }
+
+  .reveal.active {
+    display: block;
+  }
   .hero-tab-container h3 {
     display: block;
   }
