@@ -17,6 +17,13 @@
   z-index: 1;
 }
 
+.reveal {
+  display: none;
+}
+.reveal.active {
+  display: block;
+}
+
 .hero-menu {
   display: flex;
   justify-content: space-between;
@@ -266,7 +273,7 @@
     background-position: center;
   }
   .container-bottom {
-    height: 13.3vh;
+    height: 23.3vh;
     background-color: red;
   }
 

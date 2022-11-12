@@ -15,9 +15,14 @@ export default function HouseCard({
   tipology,
   cardDescription,
   cardLink,
+  cssAnimation,
 }) {
   return (
-    <Card sx={{ maxWidth: 380 }} style={{ marginTop: "5rem" }}>
+    <Card
+      sx={{ maxWidth: 380 }}
+      style={{ marginTop: "5rem" }}
+      className={cssAnimation}
+    >
       <CardMedia component="img" height="140" image={cardImage} alt="casa um" />
       <CardContent>
         <div style={{ display: "flex", justifyContent: "space-around" }}>

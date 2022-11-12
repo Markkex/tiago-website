@@ -37,6 +37,24 @@ const Home = () => {
     }
   };
 
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 300;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+
   window.addEventListener("scroll", myScrollFunc);
 
   return (
@@ -85,7 +103,7 @@ const Home = () => {
           />
         )}
 
-        <div className="tabbedHero-menu">
+        <div className="tabbedHero-menu animate__animated animate__backInDown">
           <div
             style={{ textAlign: "center" }}
             onMouseEnter={() => {
@@ -164,7 +182,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-5">
+      <div className="py-5 reveal">
         <SideContent
           titleText={"Casas da Vila"}
           titleDescription={
@@ -185,7 +203,7 @@ const Home = () => {
           imageUrl={towel}
         />
       </div>
-      <div className="houses-card py-5">
+      <div className="houses-card py-5 reveal">
         <Container>
           <h1 className="pt-3" style={{ textAlign: "center" }}>
             AS NOSSAS CASAS
@@ -199,6 +217,7 @@ const Home = () => {
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
+                cssAnimation="animate__animated animate__bounceInLeft"
               />
             </div>
             <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
@@ -209,6 +228,7 @@ const Home = () => {
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
+                cssAnimation="animate__animated animate__bounceInUp"
               />
             </div>
             <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
@@ -219,19 +239,20 @@ const Home = () => {
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
+                cssAnimation="animate__animated animate__bounceInLeft"
               />
             </div>
           </div>
         </Container>
       </div>
-      <div className="partners-container py-5">
+      <div className="partners-container reveal py-5">
         <Container>
           <h1 style={{ textAlign: "center" }}>EXPLORE A FUZETA CONOSCO</h1>
           <h5 style={{ textAlign: "center" }}>
             Ao reservar conosco tem descontos nos seguintes parceiros:
           </h5>
-          <div className="partners pt-5">
-            <div className="iguarias-partner">
+          <div className="partners pt-5 ">
+            <div className="iguarias-partner animate__animated animate__bounceInLeft">
               <div className="iguarias-container container-position-relative">
                 <h3 className="container-position-absolute">
                   Iguarias da Vila
@@ -239,7 +260,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="partners-width"
+              className="partners-width animate__animated animate__bounceInRight"
               style={{ display: "flex", flexDirection: "column" }}
             >
               <div className="container-top container-position-relative">

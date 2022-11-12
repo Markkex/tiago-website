@@ -10,12 +10,13 @@ const SideContent = ({
   textThree,
   textFour,
   imageUrl,
+  cssClass,
 }) => {
   return (
     <div className="my-5 side-content">
       <Container>
-        <div className="inside-content">
-          <div className="py-5 inside-text">
+        <div className="inside-content ">
+          <div className="py-5 inside-text animate__animated animate__bounceInLeft">
             <h3 className="inside-title" style={{ textTransform: "uppercase" }}>
               {titleText}
             </h3>
@@ -34,7 +35,10 @@ const SideContent = ({
             </div>
           </div>
 
-          <div className="py-5 px-3 inside-image" style={{ width: "50%" }}>
+          <div
+            className="py-5 px-3 inside-image animate__animated animate__bounceInRight"
+            style={{ width: "50%" }}
+          >
             <img src={imageUrl} alt="towel" width="100%" />
           </div>
         </div>
