@@ -18,10 +18,11 @@
 }
 
 .reveal {
-  display: none;
+  position: relative;
+  opacity: 1;
 }
 .reveal.active {
-  display: block;
+  opacity: 1;
 }
 
 .hero-menu {
