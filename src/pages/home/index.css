@@ -1,5 +1,8 @@
-.root {
-  width: 100%;
+.App {
+  width: 100% !important;
+}
+#root {
+  width: 100% !important;
 }
 .font-hero-color {
   color: white;
