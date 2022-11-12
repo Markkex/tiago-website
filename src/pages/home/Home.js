@@ -115,7 +115,7 @@ const Home = () => {
           />
         )}
 
-        <div className="tabbedHero-menu animate__animated animate__backInDown animate__slow">
+        <div className="tabbedHero-menu">
           <div
             style={{ textAlign: "center" }}
             onMouseEnter={() => {
