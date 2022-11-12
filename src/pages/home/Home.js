@@ -17,6 +17,8 @@ import middleHouse from "../../assets/middle-house.png";
 import SideContent from "../../components/side-content/SideContent";
 import HouseCard from "../../components/card/HouseCard";
 import Footer from "../../components/footer/Footer";
+
+import FusetaImage from "../../assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg";
 //images
 
 const Home = () => {
@@ -64,7 +66,7 @@ const Home = () => {
         <div className="hero-logoContainer font-hero-color">
           <div className="hero-menu">
             <h1>Villa Imperium</h1>
-            <Button className="reservation-button">Reservar</Button>
+            <Button className="button-reservation">Reservar</Button>
           </div>
         </div>
         {residenceOn && (
@@ -72,6 +74,7 @@ const Home = () => {
             textH1="Uma terra repleta de experiências."
             textH3="Reserve já o seu quarto para as suas férias."
             cssClass="background-image-housing"
+            image={FusetaImage}
           />
         )}
         {restaurantOn && (
@@ -103,7 +106,7 @@ const Home = () => {
           />
         )}
 
-        <div className="tabbedHero-menu animate__animated animate__backInDown">
+        <div className="tabbedHero-menu animate__animated animate__backInDown animate__slow">
           <div
             style={{ textAlign: "center" }}
             onMouseEnter={() => {
