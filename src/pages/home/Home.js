@@ -55,6 +55,8 @@ const Home = () => {
     }
   }
 
+  var x = window.matchMedia("(min-width: 992px)");
+
   window.addEventListener("scroll", reveal);
 
   window.addEventListener("scroll", myScrollFunc);
@@ -65,7 +67,7 @@ const Home = () => {
       <div className="tabbed-hero">
         <div className="hero-logoContainer font-hero-color">
           <div className="hero-menu">
-            <h1>Villa Imperium</h1>
+            <h1>Casas da Vila</h1>
             <Button className="button-reservation">Reservar</Button>
           </div>
         </div>
@@ -220,7 +222,7 @@ const Home = () => {
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
-                cssAnimation="animate__animated animate__bounceInLeft"
+                cssAnimation="animate__animated animate__bounceInLeft animate__slow"
               />
             </div>
             <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
@@ -231,7 +233,7 @@ const Home = () => {
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
-                cssAnimation="animate__animated animate__bounceInUp"
+                cssAnimation="animate__animated animate__bounceInUp animate__slow"
               />
             </div>
             <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
@@ -242,7 +244,7 @@ const Home = () => {
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
                 cardLink="/casa-1"
-                cssAnimation="animate__animated animate__bounceInLeft"
+                cssAnimation="animate__animated animate__bounceInLeft animate__slow"
               />
             </div>
           </div>
@@ -255,7 +257,7 @@ const Home = () => {
             Ao reservar conosco tem descontos nos seguintes parceiros:
           </h5>
           <div className="partners pt-5 ">
-            <div className="iguarias-partner animate__animated animate__bounceInLeft">
+            <div className="iguarias-partner animate__animated animate__bounceInLeft animate__slow">
               <div className="iguarias-container container-position-relative">
                 <h3 className="container-position-absolute">
                   Iguarias da Vila
@@ -263,7 +265,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="partners-width animate__animated animate__bounceInRight"
+              className="partners-width animate__animated animate__bounceInRight animate__slow"
               style={{ display: "flex", flexDirection: "column" }}
             >
               <div className="container-top container-position-relative">

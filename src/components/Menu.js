@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "Roboto",
+              fontFamily: "Lato",
 
               color: "inherit",
               textDecoration: "none",
