@@ -58,7 +58,7 @@ const Home = () => {
   var x = window.matchMedia("(min-width: 992px)");
 
   window.addEventListener("scroll", myScrollFunc);
-  window.addEventListener("scroll", reveal);
+  //window.addEventListener("scroll", reveal);
 
   return (
     <div>
