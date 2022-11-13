@@ -5,7 +5,7 @@ const HeroContainer = ({ textH1, textH3, cssClass }) => {
     <div className="hero-content">
       <div className="hero-tab">
         <div className={`background-image ${cssClass}`}></div>
-        <div className="hero-tab-container animate__animated animate__backInLeft">
+        <div className="hero-tab-container" data-aos="fade-right">
           <h1>{textH1}</h1>
           <h3>{textH3}</h3>
         </div>

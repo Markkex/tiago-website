@@ -39,30 +39,7 @@ const Home = () => {
     }
   };
 
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-
-  var x = window.matchMedia("(min-width: 992px)");
-
   window.addEventListener("scroll", myScrollFunc);
-  window.addEventListener("scroll", () => {
-    if (x.matches == true) {
-      reveal();
-    }
-  });
 
   return (
     <div>
@@ -111,7 +88,7 @@ const Home = () => {
           />
         )}
 
-        <div className="tabbedHero-menu">
+        <div className="tabbedHero-menu animate__animated animate__bounceInDown">
           <div
             style={{ textAlign: "center" }}
             onMouseEnter={() => {
@@ -190,7 +167,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-5 reveal">
+      <div className="py-5">
         <SideContent
           titleText={"Casas da Vila"}
           titleDescription={
@@ -211,13 +188,16 @@ const Home = () => {
           imageUrl={towel}
         />
       </div>
-      <div className="houses-card py-5 reveal">
+      <div className="houses-card py-5">
         <Container>
           <h1 className="pt-3" style={{ textAlign: "center" }}>
             AS NOSSAS CASAS
           </h1>
           <div className="row">
-            <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+            <div
+              className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center"
+              data-aos="fade-right"
+            >
               <HouseCard
                 cardTitle="Casa 1"
                 cardImage={middleHouse}
@@ -228,7 +208,10 @@ const Home = () => {
                 cssAnimation="animate__animated animate__bounceInLeft animate__slow"
               />
             </div>
-            <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+            <div
+              className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center"
+              data-aos="fade-up"
+            >
               <HouseCard
                 cardTitle="Casa 2"
                 cardImage={middleHouse}
@@ -239,7 +222,10 @@ const Home = () => {
                 cssAnimation="animate__animated animate__bounceInUp animate__slow"
               />
             </div>
-            <div className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center">
+            <div
+              className="col-sx-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center"
+              data-aos="fade-left"
+            >
               <HouseCard
                 cardTitle="Casa 3"
                 cardImage={middleHouse}
@@ -253,14 +239,14 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      <div className="partners-container reveal py-5">
+      <div className="partners-container py-5">
         <Container>
           <h1 style={{ textAlign: "center" }}>EXPLORE A FUZETA CONOSCO</h1>
           <h5 style={{ textAlign: "center" }}>
             Ao reservar conosco tem descontos nos seguintes parceiros:
           </h5>
-          <div className="partners pt-5 ">
-            <div className="iguarias-partner animate__animated animate__bounceInLeft animate__slow">
+          <div className="partners pt-5">
+            <div className="iguarias-partner " data-aos="fade-right">
               <div className="iguarias-container container-position-relative">
                 <h3 className="container-position-absolute">
                   Iguarias da Vila
@@ -268,8 +254,9 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="partners-width animate__animated animate__bounceInRight animate__slow"
+              className="partners-width "
               style={{ display: "flex", flexDirection: "column" }}
+              data-aos="fade-left"
             >
               <div className="container-top container-position-relative">
                 <h3 className="container-position-absolute">Organic</h3>

@@ -16,7 +16,7 @@ const SideContent = ({
     <div className="my-5 side-content">
       <Container>
         <div className="inside-content ">
-          <div className="py-5 inside-text animate__animated animate__bounceInLeft animate__slow">
+          <div className="py-5 inside-text " data-aos="fade-right">
             <h3 className="inside-title" style={{ textTransform: "uppercase" }}>
               {titleText}
             </h3>
@@ -36,8 +36,9 @@ const SideContent = ({
           </div>
 
           <div
-            className="py-5 px-3 inside-image animate__animated animate__bounceInRight animate__slow"
+            className="py-5 px-3"
             style={{ width: "50%" }}
+            data-aos="fade-left"
           >
             <img src={imageUrl} alt="towel" width="100%" />
           </div>
