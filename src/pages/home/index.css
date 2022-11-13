@@ -1,8 +1,7 @@
-.App {
-  width: 100% !important;
-}
-#root {
-  width: 100% !important;
+html,
+body{
+width:100%;
+overflow-x:hidden;
 }
 .font-hero-color {
   color: white;
