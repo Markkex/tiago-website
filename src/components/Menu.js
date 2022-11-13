@@ -194,7 +194,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button className="reservation-button" onClick={handleOpenUserMenu}>
+            <Button className="button-reservation" onClick={handleOpenUserMenu}>
               <Link
                 style={{ color: "white" }}
                 to="/bookings"
