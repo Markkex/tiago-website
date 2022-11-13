@@ -256,17 +256,25 @@ const Home = () => {
             <div
               className="partners-width "
               style={{ display: "flex", flexDirection: "column" }}
-              data-aos="fade-left"
             >
-              <div className="container-top container-position-relative">
+              <div
+                className="container-top container-position-relative"
+                data-aos="fade-left"
+              >
                 <h3 className="container-position-absolute">Organic</h3>
               </div>
-              <div className="container-middle container-position-relative">
+              <div
+                className="container-middle container-position-relative"
+                data-aos="fade-right"
+              >
                 <h3 className="container-position-absolute">
                   Warrior's Prophecy
                 </h3>
               </div>
-              <div className="container-bottom container-position-relative">
+              <div
+                className="container-bottom container-position-relative"
+                data-aos="fade-left"
+              >
                 <h3 className="container-position-absolute">
                   Passeios Ria Formosa
                 </h3>

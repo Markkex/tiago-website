@@ -1,7 +1,7 @@
 html,
-body{
-width:100%;
-overflow-x:hidden;
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 .font-hero-color {
   color: white;
@@ -62,7 +62,7 @@ overflow-x:hidden;
 
 .background-image-housing {
   background-image: url(../../assets/camille-minouflet-d7M5Xramf8g-unsplash.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center left;
 }
 
@@ -109,10 +109,6 @@ overflow-x:hidden;
 }
 
 @media only screen and (max-width: 600px) {
-  .reveal {
-    display: block;
-  }
-
   .hero-tab-container h3 {
     display: none;
   }

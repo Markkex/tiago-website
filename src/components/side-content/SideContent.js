@@ -36,7 +36,7 @@ const SideContent = ({
           </div>
 
           <div
-            className="py-5 px-3"
+            className="py-5 px-3 inside-image"
             style={{ width: "50%" }}
             data-aos="fade-left"
           >
