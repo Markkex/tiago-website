@@ -26,7 +26,12 @@ export default function HouseCard({
       <CardMedia component="img" height="140" image={cardImage} alt="casa um" />
       <CardContent>
         <div style={{ display: "flex", justifyContent: "space-around" }}>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            fontFamily="Montserrat"
+          >
             {cardTitle}
           </Typography>
           <div style={{ display: "flex" }}>

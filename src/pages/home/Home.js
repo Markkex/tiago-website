@@ -47,7 +47,7 @@ const Home = () => {
       <div className="tabbed-hero">
         <div className="hero-logoContainer font-hero-color">
           <div className="hero-menu">
-            <h1>Casas da Vila</h1>
+            <h1 className="header-font">Casas da Vila</h1>
             <Button className="button-reservation">Reservar</Button>
           </div>
         </div>
@@ -98,6 +98,7 @@ const Home = () => {
               setLocalsOn(false);
               setExperiencesOn(false);
             }}
+            className={residenceOn ? `cenas menu-stick` : ""}
           >
             <Link to={"casas-da-vila"}>
               <HouseSidingIcon fontSize="large" />
@@ -113,6 +114,7 @@ const Home = () => {
               setLocalsOn(false);
               setExperiencesOn(false);
             }}
+            className={restaurantOn ? `cenas menu-stick` : ""}
           >
             <Link to={"iguarias-da-vila"}>
               <RestaurantMenuIcon fontSize="large" />
@@ -128,6 +130,7 @@ const Home = () => {
               setLocalsOn(false);
               setExperiencesOn(false);
             }}
+            className={organicOn ? `cenas menu-stick` : ""}
           >
             <Link to={"organic"}>
               <SpaIcon fontSize="large" />
@@ -143,6 +146,7 @@ const Home = () => {
               setLocalsOn(true);
               setExperiencesOn(false);
             }}
+            className={localsOn ? `cenas menu-stick` : ""}
           >
             <Link to={"warriors-prophecy"}>
               <FitnessCenterIcon fontSize="large" />
@@ -159,6 +163,7 @@ const Home = () => {
               setLocalsOn(false);
               setExperiencesOn(true);
             }}
+            className={experiencesOn ? `cenas menu-stick` : ""}
           >
             <Link to={"descubra-a-fuseta"}>
               <KitesurfingIcon fontSize="large" />
@@ -190,7 +195,7 @@ const Home = () => {
       </div>
       <div className="houses-card py-5">
         <Container>
-          <h1 className="pt-3" style={{ textAlign: "center" }}>
+          <h1 className="pt-3 header-font" style={{ textAlign: "center" }}>
             AS NOSSAS CASAS
           </h1>
           <div className="row">
@@ -241,13 +246,18 @@ const Home = () => {
       </div>
       <div className="partners-container py-5">
         <Container>
-          <h1 style={{ textAlign: "center" }}>EXPLORE A FUZETA CONOSCO</h1>
-          <h5 style={{ textAlign: "center" }}>
+          <h1 style={{ textAlign: "center" }} className="header-font">
+            EXPLORE A FUZETA CONOSCO
+          </h1>
+          <h5 style={{ textAlign: "center" }} className="subheader-font">
             Ao reservar conosco tem descontos nos seguintes parceiros:
           </h5>
           <div className="partners pt-5">
-            <div className="iguarias-partner " data-aos="fade-right">
-              <div className="iguarias-container container-position-relative">
+            <div
+              className="iguarias-partner container-opacity"
+              data-aos="fade-right"
+            >
+              <div className=" iguarias-container container-position-relative">
                 <h3 className="container-position-absolute">
                   Iguarias da Vila
                 </h3>
@@ -258,21 +268,21 @@ const Home = () => {
               style={{ display: "flex", flexDirection: "column" }}
             >
               <div
-                className="container-top container-position-relative"
+                className="container-opacity container-top container-position-relative"
                 data-aos="fade-left"
               >
-                <h3 className="container-position-absolute">Organic</h3>
+                <h3 className=" container-position-absolute">Organic</h3>
               </div>
               <div
-                className="container-middle container-position-relative"
+                className="container-opacity container-middle container-position-relative"
                 data-aos="fade-right"
               >
-                <h3 className="container-position-absolute">
+                <h3 className=" container-position-absolute">
                   Warrior's Prophecy
                 </h3>
               </div>
               <div
-                className="container-bottom container-position-relative"
+                className="container-opacity container-bottom container-position-relative"
                 data-aos="fade-left"
               >
                 <h3 className="container-position-absolute">

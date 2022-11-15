@@ -108,6 +108,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.container-opacity {
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 600px) {
   .hero-tab-container h3 {
     display: none;
@@ -145,6 +149,7 @@ body {
     background-size: cover;
     background-position: center;
   }
+
   .container-top {
     margin-top: 10px;
     height: 13.3vh;
@@ -209,35 +214,6 @@ body {
   .iguarias-partner {
     width: 100%;
   }
-  .iguarias-container {
-    width: 100%;
-    height: 13.3vh;
-    background-image: url(../../assets/junte-os-seus-amigos.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .container-top {
-    margin-top: 10px;
-    height: 13.3vh;
-    background-image: url(../../assets/Organic.png);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .container-middle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 13.3vh;
-    background-image: url(../../assets/Gym.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .container-bottom {
-    height: 13.3vh;
-    background-image: url(https://www.passeios-ria-formosa.com/wp-content/uploads/2021/01/aqua-taxi-slider.jpg);
-    background-size: cover;
-    background-position: center;
-  }
 
   .partners {
     display: flex;
@@ -247,32 +223,61 @@ body {
   .iguarias-partner {
     width: 100%;
   }
-  .iguarias-container {
-    width: 100%;
-    height: 23.3vh;
-    background-image: url(../../assets/junte-os-seus-amigos.png);
-    background-size: cover;
-    background-position: center;
+
+  .iguarias-container,
+  .container-top,
+  .container-middle,
+  .container-bottom {
+    position: relative;
   }
-  .container-top {
-    margin-top: 10px;
-    height: 23.3vh;
-    background-image: url(../../assets/Organic.png);
+  .iguarias-container::before,
+  .container-top::before,
+  .container-middle::before,
+  .container-bottom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     background-size: cover;
-    background-position: center;
   }
 
-  .container-middle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 23.3vh;
-    background-image: url(../../assets/Gym.png);
-    background-size: cover;
-    background-position: center;
+  .iguarias-container:hover::before,
+  .container-top:hover::before,
+  .container-middle:hover::before,
+  .container-bottom:hover::before {
+    opacity: 0.8;
   }
-  .container-bottom {
-    height: 23.3vh;
-    background-color: red;
+  .iguarias-container::before {
+    background-image: url(../../assets/junte-os-seus-amigos.png);
+  }
+  .container-top::before {
+    background-image: url(../../assets/Organic.png);
+  }
+  .container-middle::before {
+    background-image: url(../../assets/Gym.png);
+  }
+  .container-bottom::before {
+    background-image: url(https://www.passeios-ria-formosa.com/wp-content/uploads/2021/01/aqua-taxi-slider.jpg);
+  }
+
+  .container-bottom,
+  .iguarias-container,
+  .container-top,
+  .container-middle {
+    height: 13.3vh;
+  }
+
+  .container-bottom,
+  .container-middle,
+  .container-top {
+    margin-top: 20px;
   }
 
   .partners-width {
@@ -350,31 +355,51 @@ body {
   .iguarias-container {
     width: 100%;
     height: 73vh;
-    background-color: red;
   }
 
   .container-top {
     margin-top: 0px;
-    margin-left: 10px;
+    margin-left: 20px;
     height: 33%;
   }
   .container-middle {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: 20px;
     height: 33%;
-    background-color: red;
   }
 
   .container-bottom {
     height: 33%;
-    background-color: red;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .partners-width {
     width: 50%;
   }
+
+  .cenas {
+    position: relative;
+  }
+
+  .menu-stick::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    height: 10px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    animation: sheen 0.75s forwards;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+}
+
+@keyframes sheen {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 150px;
+  }
 }

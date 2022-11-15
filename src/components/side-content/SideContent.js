@@ -17,11 +17,14 @@ const SideContent = ({
       <Container>
         <div className="inside-content ">
           <div className="py-5 inside-text " data-aos="fade-right">
-            <h3 className="inside-title" style={{ textTransform: "uppercase" }}>
+            <h3
+              className="inside-title header-font"
+              style={{ textTransform: "uppercase" }}
+            >
               {titleText}
             </h3>
             <div
-              className="inside-title primary-text-color"
+              className="inside-title primary-text-color subheader-font"
               style={{ textTransform: "uppercase" }}
             >
               {titleDescription}
