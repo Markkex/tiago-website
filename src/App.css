@@ -4,19 +4,19 @@
   font-family: "Hind Madurai", sans-serif;
 }
 
+:root {
+  --primary-color: #579c9e;
+  --header-color: white;
+  --background-primary: #eef1f1;
+  --background-secondary: #000000;
+}
+
 .header-font {
   font-family: "Montserrat", sans-serif;
 }
 
 .subheader-font {
   font-family: "Lora", serif;
-}
-
-:root {
-  --primary-color: #579c9e;
-  --header-color: white;
-  --background-primary: #eef1f1;
-  --background-secondary: #000000;
 }
 
 .primary-text-color {
@@ -30,4 +30,8 @@
 
 a:hover {
   color: white;
+}
+
+.text-shadow {
+  text-shadow: 4px 3px 2px rgba(150, 150, 150, 1);
 }
