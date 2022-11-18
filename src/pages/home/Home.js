@@ -165,7 +165,7 @@ const Home = () => {
             }}
             className={experiencesOn ? `cenas menu-stick` : ""}
           >
-            <Link to={"descubra-a-fuseta"}>
+            <Link to={"discover-fuzeta"}>
               <KitesurfingIcon fontSize="large" />
               <p className="font-hero-color">Experiências</p>
             </Link>
@@ -299,12 +299,14 @@ const Home = () => {
       >
         <Container>
           <div className="container-position-relative">
-            <img src={fuseta} width="100%" />
-            <div className="container-position-absolute">
-              <span>A BRANCA NOIVA DO MAR E A BELEZA DA RIA FORMOSA</span>
-              <br />
-              <span>DESCUBRA MAIS</span>
-            </div>
+            <Link to="/discover-fuzeta">
+              <img src={fuseta} width="100%" />
+              <div className="container-position-absolute">
+                <span>A BRANCA NOIVA DO MAR E A BELEZA DA RIA FORMOSA</span>
+                <br />
+                <span>DESCUBRA MAIS</span>
+              </div>
+            </Link>
           </div>
         </Container>
       </div>
