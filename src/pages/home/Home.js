@@ -223,7 +223,7 @@ const Home = () => {
                 numberOfPeople="2"
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
-                cardLink="/casa-1"
+                cardLink="/casa-2"
                 cssAnimation="animate__animated animate__bounceInUp animate__slow"
               />
             </div>
@@ -237,7 +237,7 @@ const Home = () => {
                 numberOfPeople="2"
                 tipology={4}
                 cardDescription="Lorem Ipsum dolor sit amet."
-                cardLink="/casa-1"
+                cardLink="/casa-3"
                 cssAnimation="animate__animated animate__bounceInLeft animate__slow"
               />
             </div>
@@ -256,6 +256,10 @@ const Home = () => {
             <div
               className="iguarias-partner container-opacity"
               data-aos="fade-right"
+              onClick={() =>
+                window.open("https://www.passeios-ria-formosa.com/", "_blank")
+              }
+              style={{ cursor: "pointer" }}
             >
               <div className=" iguarias-container container-position-relative">
                 <h3 className="container-position-absolute">
@@ -270,12 +274,20 @@ const Home = () => {
               <div
                 className="container-opacity container-top container-position-relative"
                 data-aos="fade-left"
+                onClick={() =>
+                  window.open("https://www.passeios-ria-formosa.com/", "_blank")
+                }
+                style={{ cursor: "pointer" }}
               >
                 <h3 className=" container-position-absolute">Organic</h3>
               </div>
               <div
                 className="container-opacity container-middle container-position-relative"
                 data-aos="fade-right"
+                onClick={() =>
+                  window.open("https://www.passeios-ria-formosa.com/", "_blank")
+                }
+                style={{ cursor: "pointer" }}
               >
                 <h3 className=" container-position-absolute">
                   Warrior's Prophecy
@@ -284,6 +296,10 @@ const Home = () => {
               <div
                 className="container-opacity container-bottom container-position-relative"
                 data-aos="fade-left"
+                onClick={() =>
+                  window.open("https://www.passeios-ria-formosa.com/", "_blank")
+                }
+                style={{ cursor: "pointer" }}
               >
                 <h3 className="container-position-absolute">
                   Passeios Ria Formosa

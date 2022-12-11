@@ -1,0 +1,14 @@
+.house-header {
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.house-details,
+.house-location,
+.house-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

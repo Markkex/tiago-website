@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import discoverFuseta from "../../assets/discover-fuseta.png";
 import SideContent from "../../components/side-content/SideContent";
 import "./index.css";
 import image1 from "../../assets/aereo-delicioso-por-do-sol-sobre-a-vila-portuguesa-da-fuzeta-tavira_170896-1670 1.png";
 import ReverseSideContent from "../../components/reverse-side-content/ReverseSideContent";
 import Footer from "../../components/footer/Footer";
+import ResponsiveAppBar from "../../components/Menu";
 
 const DiscoverFuseta = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
+      <ResponsiveAppBar />
       <div className="container-position-relative">
         <img src={discoverFuseta} width="100%" />
         <div className="container-position-absolute header-position">
